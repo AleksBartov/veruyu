@@ -1,6 +1,6 @@
 import { FlatList, Text, View } from "react-native";
 import { Link } from "expo-router";
-import { Module } from "../types";
+import { Module } from "@/types";
 
 const modules: Module[] = [
   {

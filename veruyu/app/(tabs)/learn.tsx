@@ -1,6 +1,6 @@
-import { FlatList, Text, View } from 'react-native';
-import { Link } from 'expo-router';
-import { Module } from '@/types';
+import { FlatList, Text, View } from "react-native";
+import { Link } from "expo-router";
+import { Module } from "@/types";
 
 const modules: Module[] = [
   {
@@ -32,9 +32,9 @@ export default function LearnScreen() {
             <View style={styles.progressBar}>
               <View
                 style={{
-                  width: ${item.progress}%,
+                  width: `${item.progress}%`,
                   height: 4,
-                  backgroundColor: '#2F80ED',
+                  backgroundColor: "#2F80ED",
                 }}
               />
             </View>
@@ -47,22 +47,22 @@ export default function LearnScreen() {
 
 const styles = {
   moduleCard: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     padding: 16,
     borderRadius: 8,
     marginBottom: 12,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOpacity: 0.1,
     shadowRadius: 4,
   },
   moduleTitle: {
     fontSize: 18,
-    fontWeight: '500',
-    color: '#2D3436',
+    fontWeight: "500",
+    color: "#2D3436",
   },
   progressBar: {
     height: 4,
-    backgroundColor: '#E0E0E0',
+    backgroundColor: "#E0E0E0",
     borderRadius: 2,
     marginTop: 8,
   },

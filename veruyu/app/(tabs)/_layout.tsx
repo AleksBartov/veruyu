@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Tabs } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 
 export default function TabsLayout() {
   return (
@@ -12,7 +12,7 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen
-        name="learn"
+        name="index"
         options={{
           title: "Обучение",
           tabBarIcon: ({ color }) => (
@@ -25,7 +25,7 @@ export default function TabsLayout() {
         options={{
           title: "Литургия",
           tabBarIcon: ({ color }) => (
-            <Ionicons name="church" size={24} color={color} />
+            <MaterialIcons name="church" size={24} color={color} />
           ),
         }}
       />
